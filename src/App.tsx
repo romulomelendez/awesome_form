@@ -1,1 +1,3 @@
-export const App: React.FC = () => <h1>MOJO</h1>
+import { Home } from './pages/Home'
+
+export const App: React.FC = () => <Home />
