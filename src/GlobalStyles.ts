@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-    
     * {
         margin: 0;
         padding: 0;
@@ -16,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         background: radial-gradient(circle, #6d00a6 10%, transparent 11%);
         background-size: 2em 2em;
         background-color: #440445;
-        opacity: 1
+        opacity: 1;
+        font-family: 'Poppins', sans-serif;
     }
 `
