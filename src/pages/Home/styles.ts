@@ -64,9 +64,10 @@ export const SubmitButton = styled.button `
     align-items: center;
     height: 2rem;
     width: 13rem;
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 1rem;
-    border: 2px solid #BA49FF;
+    border: 3px solid #BA49FF;
+    border-radius: 0.3rem;
     background-color: #440445;
     color: #fff;
     font-size: large;
