@@ -25,7 +25,7 @@ export const Home: React.FC = () => {
                 <UserInformationContainer>
                     <Input inputType="text" placeholderText="Name" />
                     <Input inputType="email" placeholderText="E-mail" />
-                    <Input inputType="number" placeholderText="Number of Passengers" />
+                    <Input inputType="number" placeholderText="Total Passengers" />
                 </UserInformationContainer>
 
                 <SubmitButton type="submit">BUY NOW!</SubmitButton>
