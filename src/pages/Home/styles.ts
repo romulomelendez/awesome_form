@@ -6,10 +6,12 @@ export const Container = styled.div `
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 7px;
     border-radius: 40px;
-    height: 40.625rem;
-    width: 21.875rem;
+    height: 38rem;
+    width: 25rem;
     margin: 0.313rem;
+    padding: 5px;
     background: linear-gradient(135deg, #eaeaea80 50%, transparent 0),linear-gradient(-135deg, #eaeaea80 50%, transparent 0);
     background-size: 4em 4em;
     background-color: #f3f3f3;
@@ -17,13 +19,25 @@ export const Container = styled.div `
 
     // Using Mobile First Concept
     @media (min-width: 582px) {
-        height: 43.75rem;
-        width: 25rem;
+        height: 42rem;
+        width: 29rem;
     }
 
     @media (min-width: 832px) {
-        height: 50rem;
-        width: 35rem;
+        height: 45rem;
+        width: 33rem;
+    }
+`
+export const FormTitle = styled.h1 `
+
+    font-size: 28pt;
+    
+    @media (min-width: 582px) {
+        font-size: 34pt;
+    }
+
+    @media (min-width: 832px) {
+        font-size: 40pt;
     }
 `
 
@@ -35,13 +49,7 @@ export const Form = styled.form `
     align-items: center;
     row-gap: 1rem;
     padding: 1.2rem;
-
-`
-
-export const FormTitle = styled.h1 `
-
-    font-size: 35pt;
-    margin-bottom: 50px;
+    width: 95%;
 
 `
 
@@ -49,11 +57,18 @@ export const PlaceContainer = styled.section `
 
     display: flex;
     flex-direction: column;
+    width: 100%;
     row-gap: 0.2rem;
 
 `
 
-export const CalendarContainer = styled(PlaceContainer)``
+export const CalendarContainer = styled.div `
+
+    display: flex;
+    width: 100%;
+    column-gap: 2rem;
+
+`
 
 export const UserInformationContainer = styled(PlaceContainer)``
 
@@ -65,12 +80,17 @@ export const SubmitButton = styled.button `
     height: 2rem;
     width: 13rem;
     padding: 1.5rem;
-    margin: 1rem;
+    margin: 1.5rem;
     border: 3px solid #BA49FF;
     border-radius: 0.3rem;
     background-color: #440445;
     color: #fff;
-    font-size: large;
+    font-size: 14pt;
     font-weight: 700;
 
+    @media (max-width: 832px) {
+        width: 13rem;
+        padding: 1.2rem;
+        font-size: 12pt;
+    }
 `

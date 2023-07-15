@@ -1,4 +1,5 @@
 import { Input } from '../../components/Input'
+import { Calendar } from '../../components/Calendar'
 
 import { Container, Form, PlaceContainer, CalendarContainer, UserInformationContainer, SubmitButton, FormTitle } from './styles'
 
@@ -17,8 +18,7 @@ export const Home: React.FC = () => {
 
                 {/* Dates */}
                 <CalendarContainer>
-                    <Input inputType="date" />
-                    <Input inputType="date" />
+                    <Calendar />
                 </CalendarContainer>
 
                 {/* User Datas */}
