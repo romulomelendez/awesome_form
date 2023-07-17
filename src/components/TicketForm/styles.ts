@@ -1,46 +1,5 @@
 import styled from 'styled-components'
 
-export const Container = styled.div `
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 7px;
-    border-radius: 40px;
-    height: 38rem;
-    width: 25rem;
-    margin: 0.313rem;
-    padding: 5px;
-    background: linear-gradient(135deg, #eaeaea80 50%, transparent 0),linear-gradient(-135deg, #eaeaea80 50%, transparent 0);
-    background-size: 4em 4em;
-    background-color: #f3f3f3;
-    opacity: 1;
-
-    // Using Mobile First Concept
-    @media (min-width: 582px) {
-        height: 42rem;
-        width: 29rem;
-    }
-
-    @media (min-width: 832px) {
-        height: 45rem;
-        width: 33rem;
-    }
-`
-export const FormTitle = styled.h1 `
-
-    font-size: 28pt;
-    
-    @media (min-width: 582px) {
-        font-size: 34pt;
-    }
-
-    @media (min-width: 832px) {
-        font-size: 40pt;
-    }
-`
-
 export const Form = styled.form `
 
     display: flex;

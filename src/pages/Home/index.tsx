@@ -1,36 +1,10 @@
-import { Input } from '../../components/Input'
-import { Calendar } from '../../components/Calendar'
+import { TicketForm } from '../../components/TicketForm'
 
-import { Container, Form, PlaceContainer, CalendarContainer, UserInformationContainer, SubmitButton, FormTitle } from './styles'
+import { Container, FormTitle } from './styles'
 
-export const Home: React.FC = () => {
-
-    return (
-        <Container>
-            <FormTitle>Buy your Ticket</FormTitle>
-            <Form>
-
-                {/* Origin and Destination */}
-                <PlaceContainer>
-                    <Input inputType="text" placeholderText="Origin" />
-                    <Input inputType="text" placeholderText="Destination" />
-                </PlaceContainer>
-
-                {/* Dates */}
-                <CalendarContainer>
-                    <Calendar />
-                </CalendarContainer>
-
-                {/* User Datas */}
-                <UserInformationContainer>
-                    <Input inputType="text" placeholderText="Name" />
-                    <Input inputType="email" placeholderText="E-mail" />
-                    <Input inputType="number" placeholderText="Total Passengers" />
-                </UserInformationContainer>
-
-                <SubmitButton type="submit">BUY NOW!</SubmitButton>
-            </Form>
-        </Container>
-    )
-
-}
+export const Home: React.FC = () => (
+    <Container>
+        <FormTitle>Buy your Ticket</FormTitle>
+        <TicketForm />
+    </Container>
+)
