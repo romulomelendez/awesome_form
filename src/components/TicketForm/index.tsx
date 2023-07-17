@@ -7,6 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 
 import { Input } from '../../components/Input'
 import { Calendar } from '../../components/Calendar'
+import { Ticket } from '../../components/Ticket'
 
 import { Form, PlaceContainer, CalendarContainer, UserInformationContainer, SubmitButton, Error } from './styles'
 
@@ -70,7 +71,7 @@ export const TicketForm: React.FC = () => {
             </Form>
             
             {
-                ticketData && ticketData.map((ticket: TicketFormProps, index: number) => <p key={index}>{ ticket.origin }</p>)
+                ticketData && ticketData.map((ticket: TicketFormProps, index) => <Ticket key={index} data={ticket} />)
             }
         </FormProvider>
     )
