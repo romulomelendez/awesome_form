@@ -8,7 +8,7 @@ type UserInputProps = {
     name: string,
 }
 
-export const Input: React.FC<UserInputProps> = ({ inputType, placeholderText, name}) => {
+export const Input: React.FC<UserInputProps> = ({ inputType, placeholderText, name }) => {
 
     const { register } = useFormContext()
 
