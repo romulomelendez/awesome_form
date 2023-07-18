@@ -30,15 +30,14 @@ export const Container = styled.div `
 `
 export const FormTitle = styled.h1 `
 
-    font-size: 28pt;
-    margin-top: 28px;
+    font-size: 25pt;
     
     @media (min-width: 582px) {
-        font-size: 34pt;
+        font-size: 30pt;
     }
 
     @media (min-width: 832px) {
-        font-size: 40pt;
+        font-size: 33pt;
     }
 `
 

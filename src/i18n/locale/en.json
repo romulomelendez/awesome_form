@@ -3,6 +3,24 @@
         "formTitle": "Buy Tickets",
         "language": "Language",
         "english": "English",
-        "portuguese": "Portuguese"
+        "portuguese": "Portuguese",
+        "origin": "Origin",
+        "Destination": "Destination",
+        "oneWayTrip": "One-way Trip:",
+        "returnTrip": "Return Trip:",
+        "name": "Name",
+        "email": "E-mail",
+        "totalPassengers": "Number of Passengers",
+        "buyNowBtn": "BUY NOW!",
+        "dateTripError": "Return Trip date cannot be earlier than start date",
+        "originEmptyError": "Origin cannot be empty",
+        "DestinationEmptyError": "Destination cannot be empty",
+        "nameEmptyError": "Name cannot be empty",
+        "emailEmptyError": "E-mail cannot be empty",
+        "maxCharacterError": "You have reached the maximum number of characters",
+        "startDateError": "Start date must be in the future",
+        "emailInvalidError": "Invalid e-mail Format",
+        "maxPassengersError": "You have reached the maximum number of passengers",
+        "dataSaved": "Ticket Data Saved!"
     }
 }

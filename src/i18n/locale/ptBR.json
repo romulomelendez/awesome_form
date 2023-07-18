@@ -3,6 +3,24 @@
         "formTitle": "Comprar passagem",
         "language": "Língua",
         "english": "Inglês",
-        "portuguese": "Português"
+        "portuguese": "Português",
+        "origin": "Origem",
+        "destination": "Destino",
+        "oneWayTrip": "Viagem de Ida:",
+        "returnTrip": "Viagem de Volta:",
+        "name": "Nome",
+        "email": "E-mail",
+        "totalPassengers": "Número de Passageiros",
+        "buyNowBtn": "COMPRAR!",
+        "dateTripError": "A data da viagem de retorno não pode ser anterior à data de início",
+        "originEmptyError": "Origem não pode estar vazio",
+        "DestinationEmptyError": "Destino não pode estar vazio",
+        "nameEmptyError": "Nome não pode estar vazio",
+        "emailEmptyError": "E-mail não pode estar vazio",
+        "maxCharacterError": "Você atingiu o número máximo de caracteres",
+        "startDateError": "A data de ida deve estar depois da data atual",
+        "emailInvalidError": "Formato de e-mail inválido",
+        "maxPassengersError": "Você atingiu o número máximo de passageiros",
+        "dataSaved": "Dados da passagem salvos!"
     }
 }
