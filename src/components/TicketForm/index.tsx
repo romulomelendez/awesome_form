@@ -3,6 +3,7 @@
 import { useForm, SubmitHandler, FormProvider } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import toast, { Toaster } from 'react-hot-toast'
 
 import { Input } from '../../components/Input'
 import { Calendar } from '../../components/Calendar'
@@ -29,7 +30,9 @@ export const TicketForm: React.FC = () => {
         resolver: zodResolver(createTicketSchema)
     })
 
-    const createTicket: SubmitHandler<TicketFormProps> = formData => console.log('User Ticket trip Data', formData)
+
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
+    const createTicket: SubmitHandler<TicketFormProps> = () => toast.success('Ticket Data Saved')
 
     return (
         <FormProvider {...methods}>
@@ -62,7 +65,7 @@ export const TicketForm: React.FC = () => {
                 </UserInformationContainer>
 
                 <SubmitButton type="submit">BUY NOW!</SubmitButton>
-                
+                <Toaster position="top-right" reverseOrder={false} />
             </Form>
         </FormProvider>
     )
