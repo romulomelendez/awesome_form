@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
-import { useState } from 'react'
 
 import { useForm, SubmitHandler, FormProvider } from 'react-hook-form'
 import { z } from 'zod'
@@ -7,7 +6,6 @@ import { zodResolver } from '@hookform/resolvers/zod'
 
 import { Input } from '../../components/Input'
 import { Calendar } from '../../components/Calendar'
-import { Ticket } from '../../components/Ticket'
 
 import { Form, PlaceContainer, CalendarContainer, UserInformationContainer, SubmitButton, Error } from './styles'
 
@@ -27,14 +25,11 @@ export const TicketForm: React.FC = () => {
 
     type TicketFormProps = z.infer<typeof createTicketSchema>
 
-    // State to keep ticket data
-    const [ticketData, setTicketData] = useState<TicketFormProps[]>([])
-
     const methods = useForm<TicketFormProps>({
         resolver: zodResolver(createTicketSchema)
     })
 
-    const createTicket: SubmitHandler<TicketFormProps> = formData => setTicketData([formData])
+    const createTicket: SubmitHandler<TicketFormProps> = formData => console.log('User Ticket trip Data', formData)
 
     return (
         <FormProvider {...methods}>
@@ -69,10 +64,6 @@ export const TicketForm: React.FC = () => {
                 <SubmitButton type="submit">BUY NOW!</SubmitButton>
                 
             </Form>
-            
-            {
-                ticketData && ticketData.map((ticket: TicketFormProps, index) => <Ticket key={index} data={ticket} />)
-            }
         </FormProvider>
     )
 }

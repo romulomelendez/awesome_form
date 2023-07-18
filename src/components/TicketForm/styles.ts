@@ -54,7 +54,7 @@ export const SubmitButton = styled.button `
     }
 `
 
-export const Error = styled.span `
+export const Error = styled.p `
 
     color: rgba(181, 7, 7, 0.94);
     font-size: 8pt;
