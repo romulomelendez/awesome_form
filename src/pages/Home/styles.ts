@@ -1,4 +1,4 @@
-    import styled from 'styled-components'
+import styled from 'styled-components'
 
 export const Container = styled.div `
 
@@ -6,9 +6,9 @@ export const Container = styled.div `
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 7px;
-    border-radius: 40px;
-    height: 38rem;
+    row-gap: 5px;
+    border-radius: 42px;
+    height: 40rem;
     width: 25rem;
     margin: 0.313rem;
     padding: 5px;
@@ -31,6 +31,7 @@ export const Container = styled.div `
 export const FormTitle = styled.h1 `
 
     font-size: 28pt;
+    margin-top: 28px;
     
     @media (min-width: 582px) {
         font-size: 34pt;

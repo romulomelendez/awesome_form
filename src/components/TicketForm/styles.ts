@@ -39,7 +39,7 @@ export const SubmitButton = styled.button `
     height: 2rem;
     width: 13rem;
     padding: 1.5rem;
-    margin: 1.5rem;
+    margin: 0.5rem;
     border: 3px solid #BA49FF;
     border-radius: 0.3rem;
     background-color: #440445;
@@ -58,6 +58,6 @@ export const Error = styled.p `
 
     color: rgba(181, 7, 7, 0.94);
     font-size: 8pt;
-    font-weight: 500;
+    font-weight: 100;
 
 `

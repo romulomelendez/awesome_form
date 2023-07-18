@@ -15,6 +15,7 @@ export const Switcher =  styled.div `
 export const Select = styled.section `
 
     position: fixed;
+    top: 10px;
     display: flex;
     background-color: white;
     justify-content: space-around;
@@ -43,15 +44,11 @@ export const OptionContainer = styled.div `
     row-gap: 5px;
     border-radius: 4px;
     background-color: white;
-    top: 84px;
+    top: 50px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
     @media (min-width: 582px) {
-        top: 65px;
-    }
-
-    @media (min-width: 832px) {
-        top: 55px;
+        top: 48px;
     }
 
 `
